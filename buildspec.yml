@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "Starting build"
+  post_build:
+    commands:
+      - echo "Build is completed ..copying files to S3"
+artifacts:
+  files:
+    - '**/*'
